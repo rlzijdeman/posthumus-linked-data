@@ -30,15 +30,9 @@ This thus represent the data in the EAV model and a big step towards RDF:
 | Person_1 |	Name	   | Rachel Baëza weduwe D J de Vries |
 | Person_1 |	Born	   | 1874                             |
 
-Seems easy enough right? Now your task is to make an RDF of the provided data file. To do so, you need the paste() command to create a new variable. Afterwards you can store this information with the following write.table() command:
+Seems easy enough right? Now your task is to make an RDF of the provided data file. You can use a fancy script to convert your table into these 'triples', but perhaps it is much quicker to type it:
+`<Person_1>` `<isResidentOf>` `<Household_1>` etc...
 
-```write.table(VariableName,
-                  paste0("FileName ", Sys.Date(), ".rdf"),
-                  quote=F,
-                  sep = "\t", 
-                  col.names=F,
-                  row.names=F,
-                  fileEncoding="UTF-8")
-```
+Don't worry about the brackets or the formuliation of the attribute. This is just about getting feel for these three-part statements we call triples!
 
-Don’t forget to check your output in a text editor like notepad or visual studio code to see if you like the result. 
+Done? Show and compare your results with someone else!

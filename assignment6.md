@@ -30,7 +30,8 @@ This thus represent the data in the EAV model and a big step towards RDF:
 | Person_1 |	Name	   | Rachel Baëza weduwe D J de Vries |
 | Person_1 |	Born	   | 1874                             |
 
-Seems easy enough right? Now your task is to make an RDF of the provided data file. You can use a fancy script to convert your table into these 'triples', but perhaps it is much quicker to type it:
+Seems easy enough right? Now your task is to make an RDF of the provided data file. You can use a fancy script to convert your table into these 'triples', but perhaps it is much quicker to type:
+
 `<Person_1>` `<isResidentOf>` `<Household_1>` etc...
 
 Don't worry about the brackets or the formuliation of the attribute. This is just about getting feel for these three-part statements we call triples!
